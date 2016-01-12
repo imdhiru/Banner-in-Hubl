@@ -1,0 +1,17 @@
+{% image "background_image" label='Select a background image', 
+src='http://cdn2.hubspot.net/hub/428357/file-2117441560-jpg/img/dev-bg-compressed.jpg', 
+export_to_template_context=True %}
+
+<style>
+.bg-image-section{
+    background:url('{{ widget_data.background_image.src }}');
+}
+</style>
+
+/* add below code in css file for hubl banner */
+
+.bg-image-section{
+    background-size:cover;
+    min-height: 500px;
+}
+
